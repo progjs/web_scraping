@@ -29,8 +29,8 @@ def main():
     # session 객체 생성
     session = Session()
     
-    client_id = "majtsrBC2FKggVSIxjCp"
-    client_secret = "w0N76kN3PV"
+    client_id = "my_id"
+    client_secret = "my_seccret_code"
     url = "https://openapi.naver.com/v1/papago/n2mt"
     encText = "Yesterday all my troubles seemed so far away."
 
