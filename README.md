@@ -2,6 +2,7 @@
 python으로 web scraping
 
 ### naver news title 수집
+* 네이버 뉴스 링크 : <https://news.naver.com/>
 
 ### naver 파파고 API를 이용해 번역하기
 * 파파고 API 이용 신청 링크: <https://developers.naver.com/products/nmt/>
