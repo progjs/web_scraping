@@ -1,13 +1,38 @@
 #MySQL Database 생성
+
 mysql -u root –p
 show databases;
 use mysql;
-create user python@localhost identified by 'python';
-grant all on *.* to python@localhost;
-flush privileges;
-exit;
+create user python@localhost identified by 'python'; # 계정 생성
+                                        (아디 python@localhost, 패스워드 python)
+select host from user;      # user라는 table 확인
+grant all on *.* to python@localhost;                # 모든 권한을python user에게 준다
+flush privileges;          # db에 반영시키기
+exit;                      # root 종료(빠져나옴)
 
-mysql -u python -p
-create database python_db;
+
+mysql -u python -p         # 계정에 접속하고
+                           # 비번 python 치고 welcome!!
+create database python_db; # db 생성(table을 저장할)
 show databases;
 use python_db;
+
+
+# 설치방법
+root계정 아디, 비번: mysql
+utf-8 체크
+port번호 3306
+설치!
+
+mysql client 검은창 열기 (2번째줄)
+3번째줄부터 쭈욱~
+4번째줄하면 []안에 database명이 바뀐다
+
+python은 일반계정
+
+# db접속방법: mysql client창에서 use python_db;
+
+# python에서 pandas로 dataframe만들고 저장한 후 python_db에 접속해서 show tables;
+# select * from maxpop;
+
+# db접속방법: mysql client창에서 use python_db;
